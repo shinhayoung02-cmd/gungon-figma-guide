@@ -165,7 +165,7 @@ STONE은 대표 재질 모티브에서 제외/축소 — **확정됨**(03_GUNGON
 
 **이 목록은 실제 파일 시스템과 항상 100% 일치해야 한다.** 파일을 추가/이동/이름변경/삭제할 때마다 반드시 여기도 같이 고친다(자세한 규칙은 `RULE.md` 참고).
 
-마지막 확인: 2026-09-06 (`find`로 직접 대조함)
+마지막 확인: 2026-09-13 (`find`로 직접 대조함 — 09-08~09-12 사이 외부 변경 다수 반영)
 
 ```text
 GUNG ON/
@@ -175,7 +175,9 @@ GUNG ON/
 │  └─ RULE.md            운영 규칙(목적/폴더구조/작성원칙/파일명·링크 규칙)
 │
 ├─ 02_Service_Design/
-│  └─ GUNGON_Service_Planning_VER 1.0.md   서비스 기획 (유일 문서)
+│  ├─ GUNGON_Service_Planning_VER 1.0.md     서비스 기획 v1.0
+│  ├─ GUNGON_Service_Planning_VER 2.0.md     서비스 기획 v2.0 (2026-09-12)
+│  └─ GUNGON_Service_Planning_VER_2.1.md     서비스 기획 v2.1 (2026-09-12, 현재 최신)
 │
 ├─ 03_IA/
 │  └─ GUNGON_IA_VER 1.0.md                 정보구조도 (유일 문서)
@@ -188,40 +190,52 @@ GUNG ON/
 │  │  ├─ 03_GUNGON_Reference_DesignMethod_STEP3.md
 │  │  ├─ 04_GUNGON_Brand_Moodboard_STEP4.md
 │  │  └─ 05_GUNGON_Color_Origin_STEP5.md
-│  │     (STEP06 Color System 상세본은 사용자가 내용 확정되면 추후 전달 예정 — 아직 없음)
+│  │     (STEP06 Color System 상세본은 아직 없음)
 │  └─ 00_Index/
-│     └─ 페르소나체험형_경복궁관람시스템_브랜딩_가이드_v1_0.md   STEP1~12 체크리스트(Master 밖 후속 STEP 포함)
+│     └─ 페르소나체험형_경복궁관람시스템_브랜딩_가이드_v1_0.md   STEP1~12 체크리스트 (2026-09-08 수정됨)
 │
 ├─ 05_Presentation/   (비어있음)
-└─ 05_research/       (05_Presentation과 번호 중복, 확인 필요)
-   └─ Brand Moodboard Reference.md      무드보드 레퍼런스 원본 (04_Branding/01_리서치에서 이동됨, 그 폴더는 삭제)
+│
+├─ 06_research/       (예전 `05_research` — 05 번호 중복을 해소하려고 06으로 리네임됨)
+│  └─ Brand Moodboard Reference.md      무드보드 레퍼런스 원본
+│
+└─ 07_raw/            원본/작업 중 문서 보관(정제 전 raw). 2026-09-12 신설
+   └─ 3주차/
+      ├─ GUNG ON 검증 파트.md            현장 인사이트 정합성 검증 + 프로토타입 사용자 검증
+      ├─ 서비스디자인 보완서.md            서비스 원칙·시나리오·터치포인트 연결성·블루프린트
+      └─ 01_3주차 전체 기획 정리/
+         ├─ 3주차 전체 기획 정리 _ver.1.0.md
+         ├─ 3주차 전체 기획 정리 VER 2.0.md
+         ├─ 3주차 전체 기획 정리 VER 2.1.md
+         └─ 3주차 전체 기획 정리 VER 2.3.md   (3주차 최신)
 ```
 
 ### 파일별 한 줄 설명
 
-- `GUNGON_Service_Planning_VER 1.0.md` — 서비스 목적/정책/역할/경험 정의. 옛 UX기획 v2.6·보강안 3_4_5를 대체(삭제됨).
-- `GUNGON_IA_VER 1.0.md` — 실제 정보/기능/상태/구조. Web=GUIDE·STATUS·RECORD, Smart Glass=PERSONA·EVENT·FOCUS, Interactive Screen=ACTION·FEEDBACK·RESULT. 옛 IA v1.5를 대체(삭제됨).
-- `GUNGON_Branding_VER 1.0.md` — STEP01~06 전체 요약 + STEP07(Visual Identity)·STEP08(Application) 후속작업 표시. 옛 Brand_Strategy_STEP1·Branding_STEP2_Naming_Verbal·GUNGON_Color_System_Obangsaek를 대체(삭제됨).
-- `01_STEP/01_GUNGON_Brand_Strategy_STEP1.md` ~ `05_GUNGON_Color_Origin_STEP5.md` — STEP01~05 상세본, 개별 파일(2026-09-06 최종 확정: 한 파일 통합 방식을 사용자가 다시 되돌려 개별 파일로 확정함). STEP06(Color System)은 사용자가 "확정되면 나중에 줄게"라고 함 — 아직 없음, 받으면 `06_GUNGON_Color_System_STEP6.md`로 추가.
-- `05_research/Brand Moodboard Reference.md` — 원래 `04_Branding/01_리서치/`에 있었는데 `05_research`로 이동함(그 하위폴더는 삭제).
+- `GUNGON_Service_Planning_VER_2.1.md` — **현재 최신 서비스 기획.** VER 2.0 대비: 대표 프로그램 축소 섹션 추가, 경험 단계 명칭을 「준비 · 시선 · 체험 · 기억」으로 정리(2.0의 "해석/기록·확장" 대체), 8장을 "터치포인트 기준 + 경험 단계 기준" 두 축 정리로 교체, 용어를 영문 혼용에서 한글 표기(스마트 글라스/인터랙티브 스크린/웹)로 통일.
+- `GUNGON_Service_Planning_VER 2.0.md` — 터치포인트 구조에 경험 단계 기준을 처음 추가한 버전. VER 2.1의 직전 단계.
+- `GUNGON_Service_Planning_VER 1.0.md` — 서비스 목적/정책/역할/경험 정의(최초 통합본).
+- `GUNGON_IA_VER 1.0.md` — 실제 정보/기능/상태/구조. Web=GUIDE·STATUS·RECORD, Smart Glass=PERSONA·EVENT·FOCUS, Interactive Screen=ACTION·FEEDBACK·RESULT.
+- `GUNGON_Branding_VER 1.0.md` — STEP01~06 전체 요약 + STEP07(Visual Identity)·STEP08(Application) 후속작업 표시.
+- `01_STEP/01_…STEP1.md` ~ `05_…STEP5.md` — STEP01~05 상세본, 개별 파일.
+- `06_research/Brand Moodboard Reference.md` — 무드보드 레퍼런스 원본.
+- `07_raw/3주차/…` — 3주차 작업 원본. 정제된 결론은 `02_Service_Design`(VER 2.x)과 `04_Branding`으로 올라가고, 여기는 근거 원본으로 남긴다.
 
 ### 파일명 리네임 이력 (참고용)
 - `GUNGON_Branding_Master.md`(Claude 최초 생성) → 사용자가 `GUNGON_Branding_VER 1.0.md`로 리네임
 - `GUNGON_Service_Planning_Master.md` → `GUNGON_Service_Planning_VER 1.0.md`
 - `GUNGON_IA_Master.md` → `GUNGON_IA_VER 1.0.md`
-- 세 파일 모두 "VER 1.0" 버전 표기로 통일됨 — 앞으로 새 Master급 문서는 이 컨벤션(`GUNGON_{도메인}_VER {N}.0.md`)을 따른다.
-- Branding STEP 파일 방식은 다섯 번 바뀜: 개별파일(STEP_1/STEP_2) → 통합(STEP_VER 1.md, STEP1~2만) → 번호 접두사 개별파일(STEP1~5) → 통합(STEP_VER 1.0.md, STEP1~5 전부) → **다시 개별파일로, `01_STEP/` 하위폴더 안에 배치(현재 최종)**.
+- `05_research/` → `06_research/` (2026-09-08~12 사이, 05 번호 중복 해소)
+- Branding STEP 파일 방식은 다섯 번 바뀜: 개별파일 → 통합 → 번호 접두사 개별파일 → 통합 → **다시 개별파일로 `01_STEP/` 하위 배치(현재 최종)**.
 
 ### 아직 정리 안 된 위치
-- `01_figma_make_ppt/figma_make_ppt_design_system_final.md`는 아직 `MJC/` 루트에 있고 `GUNG ON/` 폴더 안으로 안 옮겨져 있음. **PPT 덱 자체**의 무채색 편집 스타일 규칙 문서(GUNG:ON 제품 컬러 시스템과는 별개).
-
----
+- `01_figma_make_ppt/figma_make_ppt_design_system_final.md`는 아직 `MJC/` 루트에 있음. **PPT 덱 자체**의 무채색 편집 스타일 규칙 문서(GUNG:ON 제품 컬러 시스템과는 별개).
 
 # 연결된 외부 리소스
 
 - **Figma 기본 작업 파일**: `GUNG:ON Figma ppt 제작` — https://www.figma.com/design/WngH1Jt8rwnA6HxQ99mMvv/GUNG-ON-Figma-ppt-%EC%A0%9C%EC%9E%91 (사용안내/변경 로그 페이지 포함)
 - **Figma 원본/분석 파일**: `GUNG:ON Figma` — https://www.figma.com/design/ci38eNYyZHY0K5e1cAdYqw/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C
-- **공개 GitHub 미러**: https://github.com/shinhayoung02-cmd/gungon-figma-guide — 이 vault(`01_system`~`05_research`) 전체를 그대로 미러링함. **이 vault를 수정할 때마다 그 즉시 이 레포에도 반영하고 커밋/푸시한다** (2026-09-06 사용자가 지속 동기화로 확정, Figma 파일간 반영과 달리 이건 매번 자동으로 한다).
+- **공개 GitHub 미러**: https://github.com/shinhayoung02-cmd/gungon-figma-guide — 이 vault(`01_system`~`07_raw`) 전체를 그대로 미러링함. **이 vault를 수정할 때마다 그 즉시 이 레포에도 반영하고 커밋/푸시한다** (2026-09-06 사용자가 지속 동기화로 확정, Figma 파일간 반영과 달리 이건 매번 자동으로 한다).
 
 # 우선순위 원칙
 
@@ -232,4 +246,6 @@ GUNG ON/
 # 미해결 / 확인 필요 사항
 
 - `01_figma_make_ppt` 폴더를 `GUNG ON/` 안으로 옮길지 여부
-- `05_Presentation`과 `05_research` 폴더 번호가 둘 다 05로 동일 — 의도한 구성인지 확인 필요
+- `05_Presentation` 폴더가 계속 비어 있음 — 발표자료를 여기 둘지, Figma만 쓸지 확인 필요
+- `GUNGON_Service_Planning_VER_2.1.md` — 파일명이 `VER_2.1`(언더스코어)로 컨벤션(`VER 2.1`, 공백)과 다르고, 문서 안 제목은 아직 "(VER 2.0)"으로 남아 있음 — 확인 후 정정 필요
+- `02_Service_Design`에 VER 1.0 / 2.0 / 2.1 세 버전 공존 — RULE 3의 "옛 버전은 `_archive_{날짜}/`로 이동" 적용할지 확인 필요
