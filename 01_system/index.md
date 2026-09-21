@@ -165,7 +165,7 @@ STONE은 대표 재질 모티브에서 제외/축소 — **확정됨**(03_GUNGON
 
 **이 목록은 실제 파일 시스템과 항상 100% 일치해야 한다.** 파일을 추가/이동/이름변경/삭제할 때마다 반드시 여기도 같이 고친다(자세한 규칙은 `RULE.md` 참고).
 
-마지막 확인: 2026-09-13 (`find`로 직접 대조함 — 09-08~09-12 사이 외부 변경 다수 반영)
+마지막 확인: 2026-09-21 (`find`로 직접 대조함 — `04_Branding/GUNG-ON_굿즈_섹션_정리_ver 1.0.md` 신규 반영)
 
 ```text
 GUNG ON/
@@ -184,6 +184,7 @@ GUNG ON/
 │
 ├─ 04_Branding/
 │  ├─ GUNGON_Branding_VER 1.0.md    전체 요약 Master
+│  ├─ GUNG-ON_굿즈_섹션_정리_ver 1.0.md   Figma 굿즈 섹션(node 2337:1533) 내용 정리 (2026-09-21 신규)
 │  ├─ 01_STEP/
 │  │  ├─ 01_GUNGON_Brand_Strategy_STEP1.md
 │  │  ├─ 02_GUNGON_Naming_Verbal_STEP2.md
@@ -217,6 +218,7 @@ GUNG ON/
 - `GUNGON_Service_Planning_VER 1.0.md` — 서비스 목적/정책/역할/경험 정의(최초 통합본).
 - `GUNGON_IA_VER 1.0.md` — 실제 정보/기능/상태/구조. Web=GUIDE·STATUS·RECORD, Smart Glass=PERSONA·EVENT·FOCUS, Interactive Screen=ACTION·FEEDBACK·RESULT.
 - `GUNGON_Branding_VER 1.0.md` — STEP01~06 전체 요약 + STEP07(Visual Identity)·STEP08(Application) 후속작업 표시.
+- `GUNG-ON_굿즈_섹션_정리_ver 1.0.md` — Figma `WngH1Jt8rwnA6HxQ99mMvv` 섹션 `굿즈`(node `2337:1533`)를 정리한 노트. **주의**: 이 섹션은 Figma "변경 로그" 페이지에 항목이 없는 별도 실험 영역으로, 현재 트래킹되는 17장 본 덱과 무관. 내용이 GPS(수집 정보)·NFC(굿즈 태그·리마인드)를 전제로 설계돼 있는데, GPS는 위 "사용하지 않는 기능" 목록에 명시적으로 금지돼 있고 NFC는 "핵심 기능으로 확정하지 않음" 상태라 본 덱 정책과 충돌함 — 이 굿즈 안을 정식 반영할지는 사용자 확인 필요(미해결 사항에도 기록).
 - `01_STEP/01_…STEP1.md` ~ `05_…STEP5.md` — STEP01~05 상세본, 개별 파일.
 - `06_research/Brand Moodboard Reference.md` — 무드보드 레퍼런스 원본.
 - `07_raw/3주차/…` — 3주차 작업 원본. 정제된 결론은 `02_Service_Design`(VER 2.x)과 `04_Branding`으로 올라가고, 여기는 근거 원본으로 남긴다.
@@ -245,6 +247,7 @@ GUNG ON/
 
 # 미해결 / 확인 필요 사항
 
+- `GUNG-ON_굿즈_섹션_정리_ver 1.0.md`(굿즈 섹션, node `2337:1533`)가 GPS·NFC를 전제로 함 — "사용하지 않는 기능"(GPS 금지)·Custom Goods 정의(NFC 미확정)와 충돌. 이 굿즈 기획을 정식 반영할지, 아니면 그대로 실험안으로 둘지 확인 필요.
 - `01_figma_make_ppt` 폴더를 `GUNG ON/` 안으로 옮길지 여부
 - `05_Presentation` 폴더가 계속 비어 있음 — 발표자료를 여기 둘지, Figma만 쓸지 확인 필요
 - `GUNGON_Service_Planning_VER_2.1.md` — 파일명이 `VER_2.1`(언더스코어)로 컨벤션(`VER 2.1`, 공백)과 다르고, 문서 안 제목은 아직 "(VER 2.0)"으로 남아 있음 — 확인 후 정정 필요
